@@ -2,7 +2,7 @@
 
 namespace eureka_plotter_car {
   //% color="#3943c6" weight=71　blockId=plottercar_forward
-  //% block="前進 |%F_cm| " group="3　基本の動き"
+  //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
   export function plottercar_forward(F_cm: number): void {
     for (let index = 0; index < (F_cm / 18.23) * 512; index++) {
       pins.digitalWritePin(DigitalPin.P3, 0);
