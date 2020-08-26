@@ -173,7 +173,7 @@ namespace eureka_plotter_car {
   }
 
   //% color="#3943c6" weight=71　blockId=plottercar_R_cycle
-  //% block="左回り　角度 |%R_degree| " group="3　基本の動き"
+  //% block="右回り　角度 |%R_degree| " group="3　基本の動き"
   export function plottercar_R_cycle(R_degree: number): void {
     for (let index = 0; index < (R_degree / 360) * 512 * 1.8; index++) {
       pins.digitalWritePin(DigitalPin.P3, 0);
